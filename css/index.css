@@ -118,7 +118,7 @@ header .user img {
 
 /* media queries */
 
-@media (max-width: 1200px) {
+@media screen and (max-width: 1200px) {
   html {
     font-size: 55%;
   }
@@ -128,7 +128,7 @@ header .user img {
   }
 }
 
-@media (max-width: 991px) {
+@media screen and (max-width: 991px) {
   header {
     left: -120%;
   }
@@ -143,7 +143,7 @@ header .user img {
   }
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   html {
     font-size: 50%;
   }
@@ -157,13 +157,39 @@ header .user img {
   }
 }
 
-@media (max-width: 400px) {
+@media screen and (max-width: 580px) {
+  .home h1 {
+    font-size: 4.5rem !important;
+  }
+  .home p {
+    font-size: 15px !important;
+  }
+}
+
+@media screen and (max-width: 400px) {
   header {
     width: 100vw;
   }
 
+  .home {
+    width: 100% !important;
+  }
+
+  .home h1 {
+    font-size: 4rem !important;
+    line-height: 1.9;
+  }
+
   .heading {
     margin: 0 3rem;
+  }
+
+  .box {
+    width: 100% !important;
+  }
+
+  .home .btn {
+    font-size: 10px !important;
   }
 
   .about .row .counter .box {
@@ -188,7 +214,7 @@ section {
   display: flex;
   justify-content: center;
   flex-flow: column;
-  padding: 0 15rem;
+  padding: 0 5rem;
 }
 
 .home h3 {
